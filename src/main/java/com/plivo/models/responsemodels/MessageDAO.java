@@ -13,7 +13,16 @@ import java.util.List;
 @AllArgsConstructor
 public class MessageDAO {
 
-    private String api_id;
-    private String message;
-    private List<String> message_uuid;
+  //  private String api_id;
+   // private String message;
+  //  MessageUuid message_uuid;
+
+
+    String api_id;
+    String message;
+    String[] message_uuid;
+
+
+
+
 }

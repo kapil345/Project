@@ -29,7 +29,7 @@ public class NumberDAO {
     private String sms_rate;
     private String sub_account;
     private String type;
-    private String verification_info;
+    private String[] verification_info;
     private Boolean voice_enabled;
     private String voice_rate;
 

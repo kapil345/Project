@@ -16,7 +16,7 @@ public class AllNumbersDAO {
 
     private  String api_id;
     Meta meta;
-    private Objects[] objects;
+    private ObjectsDAO[] objects;
 
 
     @Getter
@@ -39,7 +39,7 @@ public class AllNumbersDAO {
     @AllArgsConstructor
     public class Objects{
 
-        private int active;
+        private Boolean active;
         private String added_on;
         private String alias;
         private String application;
@@ -55,7 +55,7 @@ public class AllNumbersDAO {
         private String sms_rate;
         private String sub_account;
         private String type;
-        private String verification_info;
+        private String[] verification_info;
         private Boolean voice_enabled;
         private String voice_rate;
     }

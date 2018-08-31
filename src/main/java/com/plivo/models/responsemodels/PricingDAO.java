@@ -1,8 +1,17 @@
 package com.plivo.models.responsemodels;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.util.HashMap;
 import java.util.List;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class PricingDAO {
 
     private String api_id;
@@ -14,18 +23,30 @@ public class PricingDAO {
     private Voice voice;
 
 
+    @Getter
+    @Setter
+    @NoArgsConstructor
+    @AllArgsConstructor
     public class Message {
 
         private Inbound inbound;
         private Outbound outbound;
         private OutBoundNetworkList[] outbound_networks_list;
 
+        @Getter
+        @Setter
+        @NoArgsConstructor
+        @AllArgsConstructor
         public class Inbound {
 
             private String rate;
 
         }
 
+        @Getter
+        @Setter
+        @NoArgsConstructor
+        @AllArgsConstructor
         public class Outbound {
 
             private String rate;
